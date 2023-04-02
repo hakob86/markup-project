@@ -1,0 +1,113 @@
+@media only screen and (max-width: 1024px) {
+  body {
+    padding: 50px;
+  }
+  .links-wrapper {
+    column-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    padding: 0;
+    width: 100%;
+  }
+
+  .navbar {
+    height: 50px;
+    overflow: auto;
+  }
+
+  .links-wrapper {
+    column-gap: 18px;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 0 15px;
+    overflow: auto;
+  }
+
+  .logo-wrapper {
+    display: none;
+  }
+  .contacts-wrapper {
+    display: none;
+  }
+  .main {
+    flex-direction: column;
+    margin-top: 0px;
+    padding: 15px;
+    padding-top: 40px;
+    backdrop-filter: blur(10px);
+    background-color: #5c207d32;
+  }
+  .info-wrapper > h1 {
+    font-size: 36px;
+    width: 100%;
+  }
+  .promotion-wrapper {
+    text-align: left;
+  }
+  .promotion-content {
+    display: none;
+  }
+  .promotion-content-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    font-size: 14px;
+  }
+  .promotion-content-mobile > span {
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    text-transform: uppercase;
+  }
+  .promotion-content-mobile > span::before {
+    content: "";
+    height: 1.6px;
+    width: 10px;
+    background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  }
+
+  .promotion-submit > button {
+    display: none;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 15px;
+    margin-top: 40px;
+  }
+  .footer-section-info-manu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 10px 30px;
+  }
+  .footer-section-info-manu > span {
+    white-space: unset;
+  }
+  .footer-section-info-contacts {
+    text-align: left;
+  }
+  .footer-title {
+    text-align: left;
+  }
+  .social-icons {
+    justify-content: flex-start;
+  }
+  .copyright-wrapper {
+    text-align: left;
+    margin-bottom: 30px;
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .copyright-wrapper > .copyright {
+    font-size: 12px;
+  }
+  .red-ball-small {
+    top: 420px;
+  }
+}
